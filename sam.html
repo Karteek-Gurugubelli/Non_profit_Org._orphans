@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+ <html lang = "en">
+ <body>
+
+        <p id="demo"></p>
+
+        <h1>What would you like it to say?</h1>
+
+        <p>Common Requests:</p>
+
+        <form action="input" action="random.html" method="get">
+
+        <select name="requests" onchange="checkIfOther();" id="dropDown1">
+
+        <option value="blank"> </option>
+        <option value="good morning sir">Good Morning Sir</option>
+        <option value="good morning madam">Good Morning Madam</option>
+        <option value="other">Other</option>
+
+        </select>
+
+        <input type="submit" value="Submit"/>
+        </form>
+
+        <div id="other" style="display:none">
+
+            <label>Other(Please explain):</label><input type="text" id="otherText"/>
+
+
+        </div>
+
+<br><br><textarea rows="3" cols="30">
+        Write a request here if you would like to hear it.
+        </textarea>
+
+ </body>
+ </html>
+
+<script>
+
+    function checkIfOther(){
+
+        a = document.getElementById("dropDown1");        
+
+        if(a.value == "other")           
+
+            document.getElementById("other").setAttribute("style","display:inline");
+
+        else
+
+            document.getElementById("other").setAttribute("style","display:none");
+
+
+        }
+
+</script>

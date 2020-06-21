@@ -1,0 +1,23 @@
+<h3>Contact Form</h3>
+
+<div class="container">
+<form method="post" action="connect4.php">
+  <form action="/action_page.php">
+    <label for="fname">Name</label>
+    <input type="text" id="name" name="tname" placeholder="Your name..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your email..">
+
+ <label for="lname">Phone No</label>
+    <input type="text" id="lname" name="phone" placeholder="Your phone no ..">
+
+ <label for="lname">Subject</label>
+    <input type="text" id="lname" name="subject" placeholder="Your subject..">
+
+    
+
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
